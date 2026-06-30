@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fitness Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+<h1>🏋 Fitness Tracker</h1>
+
+<div class="form">
+
+<input type="number" id="steps" placeholder="Steps Walked">
+
+<input type="number" id="calories" placeholder="Calories Burned">
+
+<input type="number" id="water" placeholder="Water Intake (L)">
+
+<input type="number" id="weight" placeholder="Weight (kg)">
+
+<button onclick="saveData()">Save</button>
+
+<button onclick="toggleMode()">🌙 Dark Mode</button>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h2>👣 Steps</h2>
+<p id="showSteps">0</p>
+</div>
+
+<div class="card">
+<h2>🔥 Calories</h2>
+<p id="showCalories">0</p>
+</div>
+
+<div class="card">
+<h2>💧 Water</h2>
+<p id="showWater">0 L</p>
+</div>
+
+<div class="card">
+<h2>⚖ Weight</h2>
+<p id="showWeight">0 kg</p>
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
